@@ -1,0 +1,25 @@
+
+/* nav bar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+}
+ul {
+  display: flex;
+  padding-right: 1rem;
+}
+ul li {
+  padding: 0 0.5rem;
+}
+#logo {
+  height: 2rem;
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* main-container section */
