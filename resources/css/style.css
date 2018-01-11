@@ -1,6 +1,10 @@
-
+/* body {
+  max-width: 1460px;
+  margin: 0 auto;
+} */
 /* nav bar */
 
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -22,4 +26,170 @@ ul li {
   align-items: center;
 }
 
+#bold {
+  font-weight: bold;
+}
+#grey {
+  color: grey;
+}
+
+
 /* main-container section */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 46.25rem;
+  overflow: scroll;
+}
+
+/* first container */
+
+.container {
+  display: flex;
+}
+
+.first
+/* .third*/ {
+  background-color: Gainsboro;
+}
+
+.banner {
+  width: 60%;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.button {
+  /* padding-left: 0.5rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.button a {
+  padding: 0.5rem 0.4rem;
+  width: 250px;
+  color: white;
+  background-color: DimGrey;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 1.5rem 0;
+}
+
+h3 {
+  font-size: 1.17rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+
+/* second container */
+
+/* left container */
+.left-container {
+  width: 60%;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.second-banner img {
+  width: 100%;
+}
+
+.text h2 {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+/* right container */
+.right-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-top: 1rem;
+  /* padding-left: 0.5rem; */
+}
+
+.info {
+  display: flex;
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 65%;
+}
+
+.description p {
+  padding: 0.5rem 0;
+}
+
+.image {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+/* third container */
+.third-container {
+  background-color: Gainsboro;
+  /* justify-content: center; */
+}
+
+.third-container h2 {
+  text-align: center;
+  padding: 2rem 0;
+  display: block;
+}
+
+.courses {
+  padding: 0 4.5rem 2rem 4.5rem;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+
+.course {
+  /* width: 30%; */
+  margin: 1rem;
+  background-color: white;
+  width: 26.2rem;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+}
+
+.course-description {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.course-header {
+  padding: 0.5rem 0;
+}
+
+/* fourh container */
+.second-banner video {
+  width: 100%;
+}
