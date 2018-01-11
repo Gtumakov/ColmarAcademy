@@ -2,21 +2,39 @@ body {
   min-width: 439px;
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
   width: 100%;
+  background-color: #0288D1;
 }
 ul {
   display: flex;
   padding-right: 1rem;
 }
 ul li {
-  padding: 0 0.5rem;
+  padding: 1rem 0.5rem;
 }
+
+li {
+  transition: 500ms;
+  transition-timing-function: ease;
+}
+
+li:hover {
+  border-radius: 4px;
+  background-color: #03A9F4;
+  cursor: pointer;
+  transition: 500ms;
+  transition-timing-function: ease;
+}
+
+li a {
+  color: #FFFFFF;
+}
+
 #logo {
   height: 2rem;
   padding-left: 1.5rem;
@@ -27,8 +45,8 @@ ul li {
 #bold {
   font-weight: bold;
 }
-#grey {
-  color: grey;
+#white {
+  color: #FFFFFF;
 }
 
 
@@ -47,7 +65,7 @@ ul li {
 
 #first,
 #third {
-  background-color: Gainsboro;
+  background-color: #CFD8DC;
 }
 
 #main-banner {
@@ -63,13 +81,18 @@ ul li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 40%;
 }
 
 a {
   display: block;
   text-decoration: none;
+  color: #03A9F4;
+}
+
+a:active {
+  color: #757575;
 }
 
 .button a {
@@ -78,18 +101,18 @@ a {
   color: white;
   background-color: DimGrey;
   text-align: center;
+  background-color: #0288D1;
+  transition: 500ms;
+  transition-timing-function: ease;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: 800;
-  margin: 1.5rem 0;
-}
-
-h3 {
-  font-size: 1.17rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
+.button a:hover {
+  border-radius: 4px;
+  width: 260px;
+  background-color: #03A9F4;
+  cursor: pointer;
+  transition: 500ms;
+  transition-timing-function: ease;
 }
 
 @media only screen and (max-width: 730px) {
@@ -122,6 +145,18 @@ h3 {
   }
 }
 
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 1.5rem 0;
+}
+
+h3 {
+  font-size: 1.17rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
 
 /* second wrapper container */
 
@@ -149,9 +184,23 @@ h3 {
   }
 }
 
+.divider-color {
+  border-left: thin solid #BDBDBD;
+}
+
 .info {
   display: flex;
   width: 100%;
+  cursor: pointer;
+  transition: 500ms;
+  transition-timing-function: ease;
+}
+
+.info:hover {
+  background-color: #B3E5FC;
+  cursor: pointer;
+  transition: 500ms;
+  transition-timing-function: ease;
 }
 
 .description {
@@ -190,6 +239,7 @@ h3 {
   text-align: center;
   padding: 2rem 0;
   display: block;
+  color: #212121;
 }
 
 .courses {
@@ -202,11 +252,27 @@ h3 {
   margin: 1rem;
   background-color: white;
   width: 26.2rem;
+  transition-property: all;
+  transition: 500ms;
+  transition-timing-function: ease;
+}
+
+.course:hover {
+  background-color: #B3E5FC;
+  width: 27rem;
+  transition-property: all;
+  transition: 500ms;
+  transition-timing-function: ease;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1531px) {
   .course {
     width: 20.2rem;
+  }
+
+  .course:hover {
+    width: 21rem;
   }
 }
 
@@ -216,11 +282,18 @@ h3 {
     width: 15.2rem;
   }
 
+  .course:hover {
+    width: 16rem;
+  }
 }
 
 @media only screen and (max-width: 986px) {
   .course {
     width: 12.2rem;
+  }
+
+  .course:hover {
+    width: 13rem;
   }
 }
 
@@ -266,8 +339,16 @@ h3 {
 }
 
 /* fourh wrapper container */
+#fourth h3 {
+  text-align: center;
+  /* margin: 0; */
+  padding-top: 2rem;
+}
+
 .banner video {
   width: 100%;
 }
 
-footer {}
+footer {
+  background-color: #607D8B;
+}
