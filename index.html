@@ -11,9 +11,13 @@
   <header>
     <div id="logo">
       <img src="resources/media/images/ic-logo.svg" alt="logo image">
-      <span id="bold">COLMAR</span><span id="white">ACADEMY</span>
+      <span id="bold" class="hide-in-mobile">COLMAR</span><span id="white" class="hide-in-mobile">ACADEMY</span>
+      <!-- logo images for mobile version -->
+      <img src="resources/media/images/ic-on-campus.svg" alt="" class="hide-in-fullscreen">
+      <img src="resources/media/images/ic-online.svg" alt="" class="hide-in-fullscreen">
+      <img src="resources/media/images/ic-login.svg" alt="" class="hide-in-fullscreen">
     </div>
-    <nav>
+    <nav class="hide-in-mobile">
       <ul>
         <li><a href="">On campus</a></li>
         <li><a href="">Online</a></li>
@@ -32,15 +36,15 @@
         <img src="resources/media/images/banner.jpg" alt="banner image">
       </div>
       <div class="button">
-        <h1>Learn something</br> new everyday</h1>
-        <h3>Lorem ipsum dolor sit amet,</br> consectetur adipisicing elit.</h3>
+        <h1>Learn something new everyday</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
         <a href="#">Start here</a>
       </div>
     </div>
 
     <!-- second container -->
     <div id="second" class="container wrapper">
-      <div class="left-column">
+      <div class="left-column hide-in-mobile">
         <div class="banner">
           <img src="resources/media/images/information-main.jpg" alt="reading man image">
         </div>
@@ -53,7 +57,8 @@
       <div class="right-column container divider-color">
         <div class="info">
           <div class="image">
-            <img src="resources/media/images/information-orientation.jpg" alt="">
+            <img src="resources/media/images/information-orientation.jpg" alt="" class="hide-in-mobile">
+            <img src="resources/media/images/information-orientation-mobile.jpg" alt="" class="hide-in-fullscreen">
           </div>
           <div class="description">
             <h3>Orientation day</h3>
@@ -63,7 +68,8 @@
         </div>
         <div class="info">
           <div class="image">
-            <img src="resources/media/images/information-campus.jpg" alt="">
+            <img src="resources/media/images/information-campus.jpg" alt="" class="hide-in-mobile">
+            <img src="resources/media/images/information-campus-mobile.jpg" alt="" class="hide-in-fullscreen">
           </div>
           <div class="description">
             <h3>Our campus</h3>
@@ -73,7 +79,8 @@
         </div>
         <div class="info">
           <div class="image">
-            <img src="resources/media/images/information-guest-lecture.jpg" alt="">
+            <img src="resources/media/images/information-guest-lecture.jpg" alt="" class="hide-in-mobile">
+            <img src="resources/media/images/information-guest-lecture-mobile.jpg" alt="" class="hide-in-fullscreen">
           </div>
           <div class="description">
             <h3>Our guest lecture</h3>
@@ -86,60 +93,72 @@
 
     <!-- third container -->
     <div id="third" class="wrapper">
-      <h2>Start learning</h2>
-      <div class="courses container">
+      <h3>Start learning</h2>
+
+      <!-- this is for mobile version section -->
+
+      <a href="" class="course-button">Software engineering</a>
+      <a href="" class="course-button">Computer art</a>
+      <a href="" class="course-button">Design</a>
+      <a href="" class="course-button">Data</a>
+      <a href="" class="course-button">Business</a>
+      <a href="" class="course-button">Marketing</a>
+      <!-- section ends -->
+
+
+      <div class="courses container hide-in-mobile">
 
         <div class="course">
           <img src="resources/media/images/course-software.jpg" alt="">
           <div class="course-description">
-            <h3>Software engineering</h3>
+            <h4>Software engineering</h4>
             <p class="course-header">COURSES</p> <!-- header-like? -->
-            <p>Web Development, Mobile</br> Development, iOT, APIs</p>
+            <p>Web Development, Mobile Development, iOT, APIs</p>
           </div>
         </div>
 
         <div class="course">
           <img src="resources/media/images/course-computer-art.jpg" alt="">
           <div class="course-description">
-            <h3>Computer art</h3>
+            <h4>Computer art</h4>
             <p class="course-header">COURSES</p>
-            <p>Imaging & Design, Web Design,</br> Motion Graphics & Visual Effects,</br> Computer Animation</p>
+            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
           </div>
         </div>
 
         <div class="course">
           <img src="resources/media/images/course-design.jpg" alt="">
           <div class="course-description">
-            <h3>Design</h3>
+            <h4>Design</h4>
             <p class="course-header">COURSES</p>
-            <p>User Experience Design, User</br> Research, Visual Design</p>
+            <p>User Experience Design, User Research, Visual Design</p>
           </div>
         </div>
 
         <div class="course">
           <img src="resources/media/images/course-data.jpg" alt="">
           <div class="course-description">
-            <h3>Data</h3>
+            <h4>Data</h4>
             <p class="course-header">COURSES</p>
-            <p>Data Science, Big Data, SQL, Data</br> Visualization</p>
+            <p>Data Science, Big Data, SQL, Data Visualization</p>
           </div>
         </div>
 
         <div class="course">
           <img src="resources/media/images/course-business.jpg" alt="">
           <div class="course-description">
-            <h3>Business</h3>
+            <h4>Business</h4>
             <p class="course-header">COURSES</p>
-            <p>Product Development, Business</br> Development, Starup</p>
+            <p>Product Development, Business Development, Startup</p>
           </div>
         </div>
 
         <div class="course">
           <img src="resources/media/images/course-marketing.jpg" alt="">
           <div class="course-description">
-            <h3>Marketing</h3>
+            <h4>Marketing</h4>
             <p class="course-header">COURSES</p>
-            <p>Analytics, Content Marketing,</br> Mobile Marketing</p>
+            <p>Analytics, Content Marketing, Mobile Marketing</p>
           </div>
         </div>
 
@@ -156,19 +175,19 @@
               Video
             </video>
           </div>
-          <div class="text">
+          <div class="text hide-in-mobile">
             <h2>Reimagine urban</h2>
             <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, effictur dolor consequat, tristique ligula."</p>
             <p>Emanuel, Sr Strategist at Hiring.com</p>
           </div>
         </div>
-        <div class="right-column container">
+        <div class="right-column container hide-in-mobile">
           <div class="info">
             <div class="image">
               <img src="resources/media/images/thesis-fisma.jpg" alt="">
             </div>
             <div class="description">
-              <h3>Fisma: Design and </br> Prototype</h3>
+              <h3>Fisma: Design and Prototype</h3>
               <p>Designer showcase of new prototype product</p>
             </div>
           </div>
@@ -190,7 +209,7 @@
     <!-- footer -->
     <footer>
       <div class="copyright"><span>© 2016 Colmar Academy. All rights reserved</span></div>
-      <div class="terms"><span>Terms</span><span>Privacy</span></div>
+      <div class="terms hide-in-mobile"><span>Terms</span><span>Privacy</span></div>
     </footer>
 
 
