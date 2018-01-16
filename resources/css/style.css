@@ -1,6 +1,7 @@
 body {
-  min-width: 439px;
+  min-width: 512px;
   line-height: 1.4;
+  font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -56,18 +57,15 @@ li a {
 
 
 /* main-container section */
-
 .container {
   display: flex;
 }
 
 .main {
   flex-direction: column;
-  /* min-width: 46.25rem; */
 }
 
 /* first wrapper container */
-
 #first,
 #third {
   background-color: #CFD8DC;
@@ -102,6 +100,7 @@ a:active {
 
 .button a {
   padding: 0.7rem 0.6rem;
+
   width: 80%;
   color: white;
   border-radius: 4px;
@@ -114,7 +113,7 @@ a:active {
 
 .button a:hover {
 
-  width: 75%;
+  width: 82%;
   background-color: #03A9F4;
   cursor: pointer;
   transition: 500ms;
@@ -123,31 +122,13 @@ a:active {
 
 @media only screen and (max-width: 730px) {
   .button a {
-    width: 230px;
-  }
-}
-
-@media only screen and (max-width: 672px) {
-  .button a {
     width: 210px;
   }
 }
 
-@media only screen and (max-width: 622px) {
+@media only screen and (max-width: 690px) {
   .button a {
-    width: 195px;
-  }
-}
-
-@media only screen and (max-width: 586px) {
-  .button a {
-    width: 180px;
-  }
-}
-
-@media only screen and (max-width: 547px) {
-  .button a {
-    width: 160px;
+    width: 200px;
   }
 }
 
@@ -157,12 +138,41 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-h3 {
+@media only screen and (max-width: 786px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.button p {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
 
+@media only screen and (max-width: 786px) {
+  .button p {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .button p {
+    font-size: 1.1rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
 
 /* second wrapper container */
 
@@ -175,6 +185,19 @@ h3 {
 .text h2 {
   padding-top: 2rem;
   padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.text p {
+  text-align: justify;
+}
+
+#block-level {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
 /* right container */
@@ -182,12 +205,6 @@ h3 {
   flex-direction: column;
   width: 40%;
   padding-top: 1rem;
-}
-
-@media only screen and (max-width: 439px) {
-  .right-column {
-    min-width: 168.8px;
-  }
 }
 
 .divider-color {
@@ -222,7 +239,7 @@ h3 {
 }
 
 .description p {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
 }
 
 .image {
@@ -231,20 +248,12 @@ h3 {
   padding: 1rem;
 }
 
-/* @media only screen and (max-width: 504px) {
-  .image {
-    height: 50.27px;
-    width: 50.27px;
-  }
-} */
-
 .image img {
   width: 100%;
   height: auto;
 }
 
 /* third wrapper */
-
 #third h3 {
   text-align: center;
   padding: 2rem 0 1rem 0;
@@ -357,16 +366,17 @@ h3 {
   padding-top: 2rem;
 }
 
-#fourth h3 {
-  text-align: center;
-  margin: 0;
 
+#text-align-center {
+  margin: 0;
+  text-align: center;
 }
 
 .banner video {
   width: 100%;
 }
 
+/* footer */
 footer {
   background-color: #BDBDBD;
   display: flex;
@@ -427,6 +437,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   #main-banner {
     width: 100%;
     padding: 0 0 2rem 0;
@@ -435,31 +446,46 @@ footer {
   #main-banner img {
     width: 100%;
   }
+
   .button {
     width: 100%;
     align-items: center;
   }
 
-  /* second wrapper */
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 1rem 1rem 1rem;
+  }
 
+  .button p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem;
+  }
+
+  .button a {
+    margin: 0.5rem 1rem 2rem 1rem;
+    width: 440px;
+  }
+
+  /* second wrapper */
   .divider-color {
     border: none;
   }
+
   .right-column {
     width: 100%;
     padding-bottom: 2rem;
   }
 
   .info {
-    /* flex-direction: column;
-    align-items: center; */
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .image {
     width: 100%;
-    /* height: 17rem; */
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -509,6 +535,10 @@ footer {
   }
 
   /* fourth */
+  #fourth {
+    padding-top: 1.5rem;
+  }
+
   .left-column {
     width: 100%;
     padding: 2rem 0 1.5rem 0;
